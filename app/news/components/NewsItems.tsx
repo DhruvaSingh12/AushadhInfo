@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface NewsItemProps {
   title: string;
@@ -39,8 +40,10 @@ const NewsItem: React.FC<NewsItemProps> = ({
         className="no-underline"
       >
         <div className="flex flex-col bg-gray-200 hover:border-black hover:shadow-md hover:shadow-gray-400 border rounded-lg shadow-md overflow-hidden p-2">
-          <img
+          <Image
             src={imageUrl}
+            width={400} // Specify a width for the image
+            height={112} // Specify a height for the image
             className="w-full h-28 rounded-md object-cover"
             alt="news"
           />
