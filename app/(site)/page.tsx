@@ -65,8 +65,8 @@ export default async function Home() {
         </Box>
 
         <div className="hidden">
-          <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-          <script src="https://mediafiles.botpress.cloud/068709b8-fee8-4963-b5c8-b1f0327fa310/webchat/v2.1/config.js"></script>
+          <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js" defer></script>
+          <script src="https://mediafiles.botpress.cloud/068709b8-fee8-4963-b5c8-b1f0327fa310/webchat/v2.1/config.js" defer></script>
         </div>
       </div>
     </div>
