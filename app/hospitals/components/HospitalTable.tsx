@@ -72,7 +72,7 @@ const HospitalTable: React.FC<HospitalTableProps> = ({ hospitals }) => {
                         <div className="flex-1 py-3 px-4 text-sm font-semibold uppercase tracking-wider w-[2%]">#</div>
                         <div className="flex-2 py-3 px-4 text-sm font-semibold uppercase tracking-wider w-[20%]">Hospital Name</div>
                         <div className="flex-3 py-3 px-4 text-sm font-semibold uppercase tracking-wider w-[38%]">Address</div>
-                        <div className="flex-4 py-3 px-4 text-sm font-semibold uppercase tracking-wider w-[10%]">Pincode</div>
+                        <div className="flex-4 py-3 px-2 text-sm font-semibold uppercase tracking-wider w-[10%]">Pincode</div>
                         <div className="flex-5 py-3 px-4 text-sm font-semibold uppercase tracking-wider w-[15%]">Telephone</div>
                         <div className="flex-6 py-3 px-4 text-sm font-semibold uppercase tracking-wider w-[15%]">Category</div>
                     </div>
@@ -81,9 +81,9 @@ const HospitalTable: React.FC<HospitalTableProps> = ({ hospitals }) => {
                             <div className="flex-1 py-4 px-4 text-base font-medium text-gray-900 w-[2%]">{index + 1}</div>
                             <div className="flex-2 py-4 px-4 text-base text-gray-900 w-[20%]">{hospital.name || '[No hospital name available]'}</div>
                             <div className="flex-3 py-4 px-4 text-base text-gray-900 w-[38%]">{hospital.address || '[No address available]'}</div>
-                            <div className="flex-4 py-4 px-4 text-base text-gray-900 w-[10%]">{hospital.pincode || '[No pincode available]'}</div>
+                            <div className="flex-4 py-4 px-2 text-base text-gray-900 w-[10%]">{hospital.pincode || '[No pincode available]'}</div>
                             <div className="flex-5 py-4 px-4 text-base text-gray-900 w-[15%]">{normalizeTelephone(hospital.telephone) || '[No telephone available]'}</div>
-                            <div className="flex-6 py-4 px- text-base text-gray-900 w-[15%]">{normalizeCategory(hospital.category)}</div>
+                            <div className="flex-6 py-4 px-4 text-base text-gray-900 w-[15%]">{normalizeCategory(hospital.category)}</div>
                         </div>
                     ))}
                 </div>
