@@ -25,8 +25,7 @@ const News: React.FC = () => {
 
   useEffect(() => {
     const fetchNews = async () => {
-      // const url = `https://newsapi.org/v2/everything?q=indian-healthcare-government&language=en&sortBy=publishedAt&apiKey=d4bc7b9933834781ae98e7f71b593ee1&pageSize=100`;
-      const url= "https://saurav.tech/NewsAPI/top-headlines/category/${this.props.category}/${this.props.country}.json";
+      const url = `https://newsapi.org/v2/everything?q=indian-healthcare-government&language=en&sortBy=publishedAt&apiKey=d4bc7b9933834781ae98e7f71b593ee1&pageSize=100`;
       const response = await fetch(url);
       const parsedData = await response.json();
 
@@ -49,7 +48,6 @@ const News: React.FC = () => {
     if (!hasMore) return;
 
     const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=d4bc7b9933834781ae98e7f71b593ee1&pageSize=12&page=${page}`;
-    
 
     const response = await fetch(url);
     const parsedData = await response.json();
